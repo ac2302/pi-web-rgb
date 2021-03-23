@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>pi web rgb</title>
-        <!-- adding css -->
-        <link rel="stylesheet" href="main.css">
+		<title>pi web rgb</title>
+		<!-- adding css -->
+		<link rel="stylesheet" href="main.css" />
 	</head>
 	<body>
 		<button class="color-selector" id="btn-white">white</button>
@@ -14,9 +14,15 @@
 		<button class="color-selector" id="btn-blue">blue</button>
 		<button class="color-selector" id="btn-yellow">yellow</button>
 		<button class="color-selector" id="btn-cyan">cyan</button>
-        <button class="color-selector" id="btn-magenta">magenta</button>
-        
-        <!-- add js -->
-        <script src="main.js"></script>
+		<button class="color-selector" id="btn-magenta">magenta</button>
+
+		<!-- form -->
+		<form method="POST" action="/change-color" id="change-color-form">
+			<input id="selected-color" name="color" type="hidden" />
+			<!-- <input type="submit"> -->
+		</form>
+
+		<!-- add js -->
+		<script src="main.js"></script>
 	</body>
 </html>
