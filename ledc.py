@@ -17,7 +17,12 @@ colors = {
 
 
 def changeColor(color):
-    led.color = colors.get(color)
+    try:
+        led.color = colors.get(color)
+    except KeyboardInterrupt:
+        exit()
+    except:
+        pass
 
 
 # checking for update
